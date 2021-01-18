@@ -1,0 +1,13 @@
+
+
+
+<%= simple_form_for [@cocktail, @dose],
+  wrapper: :inline_form,
+  html: { class: "form-inline" } do |f| %>
+
+  <%= f.input :description, :placeholder => 'Description', input_html: { class: "mb-2 mr-sm-2" } %>
+  <%= f.association :ingredient, :placeholder => 'Description', input_html: { class: "mb-2 mr-sm-2" } %>
+
+  <%= f.button :submit, class: "btn-primary mb-2 new" %>
+<% end %>
+

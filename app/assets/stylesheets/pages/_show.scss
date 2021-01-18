@@ -1,0 +1,21 @@
+.container {
+  height: 700px;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 500px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+
+.card{
+  width: 400px;
+  background-color: hsla(15, 8%, 90%, 0.4);
+  color: white;
+  border-radius: 5px;
+  margin: 30px;
+  font-family: 'Yusei Magic', sans-serif;
+}

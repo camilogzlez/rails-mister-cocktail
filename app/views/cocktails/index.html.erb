@@ -1,0 +1,23 @@
+ <div class="container">
+<h2>All Our Cocktails</h2>
+<div class="animationjs">
+<p>
+  <span id="banner-typed-text"></span>
+</p>
+</div>
+<div class="cards">
+  <% @cocktails.each do |cocktail|%>
+<div class= "col-6 col-md-4 col-lg3 mt-3">
+
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src= <%= cocktail.image %> alt="Card image cap">
+  <div class="card-body">
+     <p class="card-text"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+  </div>
+  </div>
+  </div>
+<% end %>
+</div>
+</div> 
+
+

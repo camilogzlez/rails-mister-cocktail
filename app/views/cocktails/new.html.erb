@@ -1,0 +1,16 @@
+<div class="form_container">
+
+
+<%= form_for(@cocktail, html:{class: "form-group new"}) do |f|%>
+<%=f.label :name, "Add a name for your cocktail"  %>
+<%= f.text_field :name, class: "form-control" %>
+
+<%=f.label :image, "Add a image Url"  %>
+<%= f.text_field :image, class: "form-control" %>
+
+<%= f.button :Add, class: "btn-primary mb-2"%>
+
+<% end %>
+
+
+</div>
