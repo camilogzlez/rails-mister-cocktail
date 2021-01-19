@@ -5,6 +5,8 @@
 <%=f.label :name, "Add a name for your cocktail"  %>
 <%= f.text_field :name, class: "form-control" %>
 
+<%= f.input :photos, as: :file, input_html: { multiple: true } %>
+
 <%=f.label :image, "Add a image Url"  %>
 <%= f.text_field :image, class: "form-control" %>
 
