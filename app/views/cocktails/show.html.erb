@@ -1,6 +1,9 @@
 
 <div class="container">
-   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.image %>);">
+<% if @cocktail.photo.attached? %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path(@cocktail.photo.key) %>);"> 
+<% end  %>
+
 <div class="card">
   <div class="card-header">
     <h2><%= @cocktail.name %></h2>

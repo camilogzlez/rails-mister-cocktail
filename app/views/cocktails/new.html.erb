@@ -1,16 +1,15 @@
 <div class="form_container">
 
 
-<%= form_for(@cocktail, html:{class: "form-group new"}) do |f|%>
-<%=f.label :name, "Add a name for your cocktail"  %>
-<%= f.text_field :name, class: "form-control" %>
+<%= simple_form_for(@cocktail, html:{class: "form-group new"}) do |f|%>
 
-<%= f.input :photos, as: :file, input_html: { multiple: true } %>
+<%= f.input :name, class: "form-control" %>
 
-<%=f.label :image, "Add a image Url"  %>
+<%= f.input :photo, as: :file %>
+
 <%# <%= f.text_field :image, class: "form-control" %>
 
-<%= f.button :Add, class: "btn-primary mb-2"%>
+<%= f.submit "agregar", class: "btn-primary mb-2"%>
 
 <% end %>
 
