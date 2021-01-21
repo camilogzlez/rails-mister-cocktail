@@ -7,9 +7,8 @@
   <span id="banner-typed-text"></span>
 </p>
 </div>
-<div class="cards">
+<div class="cards col-12 col-sm-6 col-md-4 col-lg-4 mt-3">
   <% @cocktails.each do |cocktail|%>
-<div class= "col-6 col-md-4 col-lg3 mt-3">
 
   <div class="card" style="width: 18rem;">
   <% if cocktail.photo.attached? %>
@@ -17,7 +16,7 @@
     <% end  %>
   <div class="card-body">
      <p class="card-text"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-  </div>
+
   </div>
   </div>
 <% end %>

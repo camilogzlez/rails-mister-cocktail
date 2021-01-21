@@ -1,0 +1,6 @@
+<h2>"Add a comment of <%= @cocktail.name %>"</h2>
+
+<%= simple_form_for [ @cocktail, @review] do |f|  %> 
+<%= f.input :content, label: "Leave a comment" %>
+<%= f.button :submit %>
+<% end %>
